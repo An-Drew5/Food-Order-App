@@ -9,7 +9,7 @@ const CartContext = createContext({
 
 function cartReducer(state, action) {
   if (action.type === "ADD_ITEM") {
-    //UPDATE THE STATE TO REMOVE AN ITEM
+    //UPDATE THE STATE TO ADD AN ITEM
     //The findIndex will check the items array to see if the item (to be added) already exist
     const existingCartItemIndex = state.items.findIndex(
       (item) => item.id === action.item.id
